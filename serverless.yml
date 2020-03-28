@@ -16,3 +16,11 @@ functions:
       - http:
           path: infer
           method: post
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    slim: true
+    zip: true
